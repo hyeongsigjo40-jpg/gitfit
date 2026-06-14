@@ -21,7 +21,7 @@ const items = [
   },
   {
     icon: "🕯",
-    image: null,
+    image: "/images/candle.png",
     title: "캔들 / 향",
     subtitle: "감정과 기억을 자극하는 매체",
     color: "#FFF5F2",
@@ -36,7 +36,7 @@ const items = [
   },
   {
     icon: "💌",
-    image: null,
+    image: "/images/message-card2.png",
     title: "메시지 카드",
     subtitle: "패키지의 감정적 핵심",
     color: "#FAF7F2",
