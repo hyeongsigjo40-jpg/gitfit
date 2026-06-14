@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import FadeUp from "./FadeUp";
 
 export default function CurationExampleSection() {
@@ -43,9 +44,19 @@ export default function CurationExampleSection() {
                 background: "rgba(255,255,255,0.04)",
                 border: "1px solid rgba(255,255,255,0.1)",
                 borderRadius: 24,
-                padding: "32px",
+                overflow: "hidden",
               }}
             >
+              {/* Product photo at top of input card */}
+              <div style={{ position: "relative", width: "100%", aspectRatio: "4/3" }}>
+                <Image
+                  src="/images/package-open.png"
+                  alt="Gifit 패키지 언박싱"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div style={{ padding: "32px" }}>
               <p
                 style={{
                   fontSize: 12,
@@ -94,6 +105,7 @@ export default function CurationExampleSection() {
                     </div>
                   </div>
                 ))}
+              </div>
               </div>
             </div>
           </FadeUp>

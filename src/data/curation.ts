@@ -21,7 +21,7 @@ export const scentOptions: ScentOption[] = [
     matchedQ1: "괜히 마음이 따뜻해져요",
     subMatches: ["멀리 있어도 자꾸 생각나요"],
     reason: "당신과 함께 있을 때 느껴지는 온기를 닮은 바닐라 앰버 향을 골랐어요.",
-    cardLineHalf: "이 향은 네가 잠깐이라도 포근하게 쉬었으면 해서,",
+    cardLineHalf: "너와 있으면 괜히 마음이 따뜻해져서, 포근한 바닐라 앰버 향을 골랐어.",
     shortDescription: "따뜻한 바닐라와 은은한 앰버가 포근하게 남는 향",
   },
   {
@@ -32,7 +32,7 @@ export const scentOptions: ScentOption[] = [
     matchedQ1: "걱정이 조금 가벼워져요",
     subMatches: ["편하게 숨 쉴 수 있어요"],
     reason: "걱정이 조금 내려앉는 느낌을 닮은 라벤더 허브 향을 골랐어요.",
-    cardLineHalf: "이 향은 네 걱정이 조금이라도 내려앉았으면 해서,",
+    cardLineHalf: "너와 있으면 걱정이 조금 가벼워져서, 차분한 라벤더 허브 향을 골랐어.",
     shortDescription: "지친 마음을 천천히 가라앉히는 차분한 허브 향",
   },
   {
@@ -43,7 +43,7 @@ export const scentOptions: ScentOption[] = [
     matchedQ1: "편하게 숨 쉴 수 있어요",
     subMatches: ["내가 나다워지는 느낌이에요"],
     reason: "그 편안함을 닮은 조용한 우디 머스크 향을 골랐어요.",
-    cardLineHalf: "이 향은 네가 잠깐이라도 숨을 고를 수 있었으면 해서,",
+    cardLineHalf: "너와 있으면 편하게 숨 쉴 수 있어서, 조용한 우디 머스크 향을 골랐어.",
     shortDescription: "나무의 차분함과 머스크의 부드러움이 오래 남는 향",
   },
   {
@@ -54,7 +54,7 @@ export const scentOptions: ScentOption[] = [
     matchedQ1: "나도 모르게 웃게 돼요",
     subMatches: ["조금 더 용기 있는 사람이 돼요"],
     reason: "당신과 있으면 웃게 되는 순간을 닮은 시트러스 베르가못 향을 골랐어요.",
-    cardLineHalf: "이 향은 네가 잠깐이라도 웃을 수 있었으면 해서,",
+    cardLineHalf: "너와 있으면 나도 모르게 웃게 돼서, 밝은 시트러스 베르가못 향을 골랐어.",
     shortDescription: "밝고 산뜻하게 기분을 환기시키는 향",
   },
   {
@@ -65,7 +65,7 @@ export const scentOptions: ScentOption[] = [
     matchedQ1: "조금 더 용기 있는 사람이 돼요",
     subMatches: ["편하게 숨 쉴 수 있어요"],
     reason: "당신 곁에서 조금 더 단단해지는 마음을 닮은 샌달우드 향을 골랐어요.",
-    cardLineHalf: "이 향은 네가 조금 더 단단하게 버틸 수 있었으면 해서,",
+    cardLineHalf: "너와 있으면 조금 더 용기 있는 사람이 되는 것 같아서, 단단한 샌달우드 향을 골랐어.",
     shortDescription: "차분하지만 중심을 잡아주는 깊은 나무 향",
   },
   {
@@ -76,7 +76,7 @@ export const scentOptions: ScentOption[] = [
     matchedQ1: "내가 나다워지는 느낌이에요",
     subMatches: ["걱정이 조금 가벼워져요"],
     reason: "꾸미지 않아도 편안한 나다움을 닮은 그린티 우디 향을 골랐어요.",
-    cardLineHalf: "이 향은 그냥 네 자신으로 있을 수 있었으면 해서,",
+    cardLineHalf: "너와 있으면 내가 나다워지는 느낌이 들어서, 담백한 그린티 우디 향을 골랐어.",
     shortDescription: "맑은 그린티와 담백한 우디함이 균형 있게 남는 향",
   },
   {
@@ -87,7 +87,7 @@ export const scentOptions: ScentOption[] = [
     matchedQ1: "멀리 있어도 자꾸 생각나요",
     subMatches: ["괜히 마음이 따뜻해져요"],
     reason: "멀리 있어도 오래 남는 마음을 닮은 로즈 머스크 향을 골랐어요.",
-    cardLineHalf: "이 향은 멀리 있어도 곁에 있는 느낌이 남았으면 해서,",
+    cardLineHalf: "너와 멀리 있어도 자꾸 생각나서, 다정한 로즈 머스크 향을 골랐어.",
     shortDescription: "부드러운 장미와 머스크가 잔잔하게 남는 향",
   },
   {
@@ -98,7 +98,7 @@ export const scentOptions: ScentOption[] = [
     matchedQ1: "걱정이 조금 가벼워져요",
     subMatches: ["내가 나다워지는 느낌이에요"],
     reason: "마음이 맑아지는 순간을 닮은 화이트 티 향을 골랐어요.",
-    cardLineHalf: "이 향은 네 마음이 조금 맑아졌으면 해서,",
+    cardLineHalf: "너와 있으면 마음이 맑고 가벼워지는 것 같아서, 깨끗한 화이트 티 향을 골랐어.",
     shortDescription: "과하지 않고 깨끗하게 마음을 정리해주는 향",
   },
   {
@@ -109,7 +109,7 @@ export const scentOptions: ScentOption[] = [
     matchedQ1: "편하게 숨 쉴 수 있어요",
     subMatches: ["괜히 마음이 따뜻해져요"],
     reason: "과하지 않게 편안한 마음을 닮은 코튼 린넨 향을 골랐어요.",
-    cardLineHalf: "이 향은 아무 부담 없이 편하게 쉬었으면 해서,",
+    cardLineHalf: "너와 있으면 과하지 않게 편안해져서, 부드러운 코튼 린넨 향을 골랐어.",
     shortDescription: "깨끗한 이불처럼 담백하고 부담 없는 향",
   },
   {
@@ -120,7 +120,7 @@ export const scentOptions: ScentOption[] = [
     matchedQ1: "조금 더 용기 있는 사람이 돼요",
     subMatches: ["나도 모르게 웃게 돼요"],
     reason: "당신과 함께 있을 때 조금 더 환해지는 마음을 닮은 재스민 플로럴 향을 골랐어요.",
-    cardLineHalf: "이 향은 네가 조금 더 환해졌으면 해서,",
+    cardLineHalf: "너와 있으면 조금 더 환해지는 사람이 되는 것 같아서, 은은한 재스민 플로럴 향을 골랐어.",
     shortDescription: "은은한 꽃향이 생기와 부드러운 자신감을 더하는 향",
   },
 ];
@@ -145,7 +145,7 @@ export const flowerOptions: FlowerOption[] = [
     matchedQ2: "네가 준 온기를 돌려주고 싶어요",
     subMatches: ["보고 싶었다는 마음을 전하고 싶어요"],
     reason: "장미에는 오래 남는 애정과 따뜻한 마음을 담을 수 있어서 골랐어요.",
-    cardLine: "이 꽃은 네가 내게 남긴 따뜻함이 오래 머물렀으면 해서 골랐어.",
+    cardLine: "장미의 꽃말이 오래 남는 애정과 따뜻한 사랑이어서, 이 꽃을 골랐어.",
   },
   {
     id: "carnation",
@@ -154,7 +154,7 @@ export const flowerOptions: FlowerOption[] = [
     matchedQ2: "고마웠다는 말을 제대로 전하고 싶어요",
     subMatches: ["네가 준 온기를 돌려주고 싶어요"],
     reason: "카네이션에는 말로 다 못 한 감사와 존중의 마음이 담겨 있어서 골랐어요.",
-    cardLine: "이 꽃에는 말로 다 못 한 고마움과 존중의 마음을 담았어.",
+    cardLine: "카네이션의 꽃말이 감사와 존경이어서, 이 꽃을 골랐어.",
   },
   {
     id: "lavender",
@@ -163,7 +163,7 @@ export const flowerOptions: FlowerOption[] = [
     matchedQ2: "잠깐이라도 쉬게 해주고 싶어요",
     subMatches: ["늦었지만 미안하다고 말하고 싶어요"],
     reason: "라벤더의 평온한 의미가 잠깐의 휴식과 잘 어울려서 골랐어요.",
-    cardLine: "이 꽃은 네 시간이 조금 더 평온해졌으면 해서 골랐어.",
+    cardLine: "라벤더의 꽃말이 평온과 기다림이어서, 이 꽃을 골랐어.",
   },
   {
     id: "babys-breath",
@@ -172,7 +172,7 @@ export const flowerOptions: FlowerOption[] = [
     matchedQ2: "늦었지만 미안하다고 말하고 싶어요",
     subMatches: ["보고 싶었다는 마음을 전하고 싶어요"],
     reason: "안개꽃은 작지만 오래 남는 진심을 전하기 좋아서 골랐어요.",
-    cardLine: "이 꽃은 작지만 오래 남는 진심을 전하고 싶어서 골랐어.",
+    cardLine: "안개꽃의 꽃말이 순수한 진심과 오래가는 마음이어서, 이 꽃을 골랐어.",
   },
   {
     id: "hydrangea",
@@ -181,7 +181,7 @@ export const flowerOptions: FlowerOption[] = [
     matchedQ2: "고마웠다는 말을 제대로 전하고 싶어요",
     subMatches: ["늦었지만 미안하다고 말하고 싶어요"],
     reason: "수국에는 쉽게 말하지 못했던 깊은 감정을 담을 수 있어서 골랐어요.",
-    cardLine: "이 꽃에는 쉽게 말하지 못했던 깊은 마음을 담았어.",
+    cardLine: "수국의 꽃말이 진심 어린 감정과 이해여서, 이 꽃을 골랐어.",
   },
   {
     id: "sunflower",
@@ -190,7 +190,7 @@ export const flowerOptions: FlowerOption[] = [
     matchedQ2: "다시 힘낼 수 있게 해주고 싶어요",
     subMatches: ["축하받아 마땅하다고 말해주고 싶어요"],
     reason: "해바라기는 다시 밝은 쪽을 바라보게 하는 응원의 마음과 잘 어울려서 골랐어요.",
-    cardLine: "이 꽃은 네가 다시 밝은 쪽을 볼 수 있기를 바라서 골랐어.",
+    cardLine: "해바라기의 꽃말이 응원과 밝은 희망이어서, 이 꽃을 골랐어.",
   },
   {
     id: "tulip",
@@ -199,7 +199,7 @@ export const flowerOptions: FlowerOption[] = [
     matchedQ2: "축하받아 마땅하다고 말해주고 싶어요",
     subMatches: ["다시 힘낼 수 있게 해주고 싶어요"],
     reason: "튤립은 새로운 시작과 축하의 마음을 전하기 좋아서 골랐어요.",
-    cardLine: "이 꽃은 네 새로운 시작이 충분히 축하받아야 한다는 마음으로 골랐어.",
+    cardLine: "튤립의 꽃말이 새로운 시작과 축하의 마음이어서, 이 꽃을 골랐어.",
   },
   {
     id: "ranunculus",
@@ -208,7 +208,7 @@ export const flowerOptions: FlowerOption[] = [
     matchedQ2: "축하받아 마땅하다고 말해주고 싶어요",
     subMatches: ["네가 준 온기를 돌려주고 싶어요"],
     reason: "라넌큘러스는 그 사람의 빛남을 축하하는 꽃으로 잘 어울려서 골랐어요.",
-    cardLine: "이 꽃은 네가 가진 빛남을 제대로 축하하고 싶어서 골랐어.",
+    cardLine: "라넌큘러스의 꽃말이 빛나는 매력과 축복이어서, 이 꽃을 골랐어.",
   },
   {
     id: "lisianthus",
@@ -217,7 +217,7 @@ export const flowerOptions: FlowerOption[] = [
     matchedQ2: "고마웠다는 말을 제대로 전하고 싶어요",
     subMatches: ["보고 싶었다는 마음을 전하고 싶어요"],
     reason: "리시안셔스는 오래 말하지 못한 고마움을 조용히 전하기 좋아서 골랐어요.",
-    cardLine: "이 꽃에는 오래 말하지 못했던 고마움을 담았어.",
+    cardLine: "리시안셔스의 꽃말이 변치 않는 감사와 우아한 마음이어서, 이 꽃을 골랐어.",
   },
   {
     id: "peony",
@@ -226,7 +226,7 @@ export const flowerOptions: FlowerOption[] = [
     matchedQ2: "축하받아 마땅하다고 말해주고 싶어요",
     subMatches: ["네가 준 온기를 돌려주고 싶어요"],
     reason: "작약은 앞으로 좋은 일이 피어나길 바라는 마음과 잘 어울려서 골랐어요.",
-    cardLine: "이 꽃은 너에게 좋은 일이 오래 피어났으면 해서 골랐어.",
+    cardLine: "작약의 꽃말이 좋은 일과 따뜻한 축복이어서, 이 꽃을 골랐어.",
   },
 ];
 
@@ -350,6 +350,7 @@ export function generateCuration(answers: CurationAnswers): CurationOutput {
   // Assemble message card
   const messageCard = [
     contextLine,
+    "",
     scent.cardLineHalf,
     flower.cardLine,
     "",

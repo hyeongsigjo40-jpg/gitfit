@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import FadeUp from "./FadeUp";
 
 export default function ReceiverExperienceSection() {
@@ -106,31 +107,23 @@ export default function ReceiverExperienceSection() {
                 boxShadow: "0 16px 48px rgba(31,27,24,0.10)",
               }}
             >
-              {/* Package preview */}
+              {/* Message card photo */}
               <div
                 style={{
-                  background: "#FAF7F2",
-                  border: "1px solid #E8DDD6",
+                  position: "relative",
+                  width: "100%",
                   borderRadius: 18,
-                  padding: "20px",
+                  overflow: "hidden",
+                  aspectRatio: "4 / 3",
                   marginBottom: 20,
-                  display: "flex",
-                  justifyContent: "center",
-                  gap: 20,
                 }}
               >
-                <div className="text-center">
-                  <div style={{ fontSize: 36, marginBottom: 6 }}>🌿</div>
-                  <p style={{ fontSize: 11, color: "#9C9189" }}>프리저브드 플라워</p>
-                </div>
-                <div className="text-center">
-                  <div style={{ fontSize: 36, marginBottom: 6 }}>🕯</div>
-                  <p style={{ fontSize: 11, color: "#9C9189" }}>캔들 / 향</p>
-                </div>
-                <div className="text-center">
-                  <div style={{ fontSize: 36, marginBottom: 6 }}>💌</div>
-                  <p style={{ fontSize: 11, color: "#9C9189" }}>메시지 카드</p>
-                </div>
+                <Image
+                  src="/images/message-card.png"
+                  alt="메시지 카드를 받는 순간"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
               </div>
 
               {/* Reaction */}

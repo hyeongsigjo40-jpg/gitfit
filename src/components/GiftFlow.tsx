@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
@@ -236,17 +237,8 @@ export default function GiftFlow() {
           margin: "0 auto",
         }}
       >
-        <Link
-          href="/"
-          style={{
-            fontSize: 20,
-            fontWeight: 800,
-            color: "#1F1B18",
-            textDecoration: "none",
-            letterSpacing: "-0.02em",
-          }}
-        >
-          Gifit
+        <Link href="/" style={{ display: "flex", alignItems: "center" }}>
+          <Image src="/logo.png" alt="Gifit" width={60} height={40} style={{ objectFit: "contain", height: 40, width: "auto" }} />
         </Link>
         <span style={{ fontSize: 13, color: "#9C9189" }}>
           {step + 1} / {QUESTIONS.length}

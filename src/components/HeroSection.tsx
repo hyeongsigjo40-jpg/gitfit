@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
@@ -257,53 +258,107 @@ export default function HeroSection() {
             </motion.div>
           </div>
 
-          {/* Right: Product card */}
+          {/* Right: Product photo */}
           <div className="flex justify-center lg:justify-end relative">
-            {/* Floating label top */}
+            {/* Floating label — flower */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.8, ease: EASE }}
               style={{
                 position: "absolute",
-                top: -12,
-                left: -20,
+                top: 32,
+                left: -24,
                 background: "#FFFFFF",
                 border: "1px solid #E8DDD6",
                 borderRadius: 12,
-                padding: "8px 14px",
-                boxShadow: "0 4px 16px rgba(31,27,24,0.08)",
+                padding: "10px 16px",
+                boxShadow: "0 4px 20px rgba(31,27,24,0.10)",
                 zIndex: 10,
               }}
               className="hidden lg:flex items-center gap-2"
             >
-              <span style={{ fontSize: 13 }}>🌸</span>
-              <span style={{ fontSize: 12, fontWeight: 500, color: "#7A7069" }}>이 꽃을 고른 이유</span>
+              <span style={{ fontSize: 14 }}>🌸</span>
+              <div>
+                <p style={{ fontSize: 11, color: "#9C9189", marginBottom: 1 }}>프리저브드 플라워</p>
+                <p style={{ fontSize: 12, fontWeight: 600, color: "#1F1B18" }}>이 꽃을 고른 이유</p>
+              </div>
             </motion.div>
 
-            {/* Floating label bottom */}
+            {/* Floating label — scent */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 1.0, ease: EASE }}
               style={{
                 position: "absolute",
-                bottom: 24,
-                right: -16,
+                bottom: 48,
+                right: -20,
                 background: "#FFFFFF",
                 border: "1px solid #E8DDD6",
                 borderRadius: 12,
-                padding: "8px 14px",
-                boxShadow: "0 4px 16px rgba(31,27,24,0.08)",
+                padding: "10px 16px",
+                boxShadow: "0 4px 20px rgba(31,27,24,0.10)",
                 zIndex: 10,
               }}
               className="hidden lg:flex items-center gap-2"
             >
-              <span style={{ fontSize: 13 }}>🕯</span>
-              <span style={{ fontSize: 12, fontWeight: 500, color: "#7A7069" }}>이 향을 고른 이유</span>
+              <span style={{ fontSize: 14 }}>🕯</span>
+              <div>
+                <p style={{ fontSize: 11, color: "#9C9189", marginBottom: 1 }}>캔들 / 향</p>
+                <p style={{ fontSize: 12, fontWeight: 600, color: "#1F1B18" }}>이 향을 고른 이유</p>
+              </div>
             </motion.div>
 
-            <CurationCard />
+            {/* Floating label — card */}
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1.2, ease: EASE }}
+              style={{
+                position: "absolute",
+                top: "50%",
+                right: -24,
+                transform: "translateY(-50%)",
+                background: "#F0D8D1",
+                border: "1px solid #E8DDD6",
+                borderRadius: 12,
+                padding: "10px 16px",
+                boxShadow: "0 4px 20px rgba(197,138,122,0.15)",
+                zIndex: 10,
+              }}
+              className="hidden lg:flex items-center gap-2"
+            >
+              <span style={{ fontSize: 14 }}>💌</span>
+              <div>
+                <p style={{ fontSize: 11, color: "#C58A7A", marginBottom: 1 }}>메시지 카드</p>
+                <p style={{ fontSize: 12, fontWeight: 600, color: "#1F1B18" }}>선택의 이유를 담아요</p>
+              </div>
+            </motion.div>
+
+            {/* Product image */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.96, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.9, delay: 0.35, ease: EASE }}
+              style={{
+                borderRadius: 28,
+                overflow: "hidden",
+                boxShadow: "0 32px 72px rgba(31,27,24,0.14), 0 8px 24px rgba(31,27,24,0.08)",
+                width: "100%",
+                maxWidth: 440,
+                aspectRatio: "1 / 1",
+                position: "relative",
+              }}
+            >
+              <Image
+                src="/images/hero-product.png"
+                alt="Gifit 패키지 — 프리저브드 플라워, 캔들, 메시지 카드"
+                fill
+                style={{ objectFit: "cover" }}
+                priority
+              />
+            </motion.div>
           </div>
         </div>
       </div>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer
@@ -10,17 +12,13 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <p
-              style={{
-                fontSize: 22,
-                fontWeight: 800,
-                color: "#FAF7F2",
-                letterSpacing: "-0.02em",
-                marginBottom: 10,
-              }}
-            >
-              Gifit
-            </p>
+            <Image
+              src="/logo.png"
+              alt="Gifit"
+              width={80}
+              height={54}
+              style={{ objectFit: "contain", height: 54, width: "auto", filter: "brightness(0) invert(1)", marginBottom: 10 }}
+            />
             <p
               style={{
                 fontSize: 13,

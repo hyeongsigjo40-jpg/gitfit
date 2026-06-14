@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
@@ -33,8 +34,8 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 h-[68px] flex items-center justify-between">
-        <a href="#" className="text-foreground font-bold text-xl tracking-tight select-none">
-          Gifit
+        <a href="#" className="select-none flex items-center">
+          <Image src="/logo.png" alt="Gifit" width={72} height={48} style={{ objectFit: "contain", height: 44, width: "auto" }} priority />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">

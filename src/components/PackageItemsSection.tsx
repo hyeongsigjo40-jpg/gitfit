@@ -1,10 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import FadeUp from "./FadeUp";
 
 const items = [
   {
     icon: "🌿",
+    image: "/images/flower.png",
     title: "프리저브드 플라워",
     subtitle: "시들지 않는 생화",
     color: "#F0F7F0",
@@ -19,6 +21,7 @@ const items = [
   },
   {
     icon: "🕯",
+    image: null,
     title: "캔들 / 향",
     subtitle: "감정과 기억을 자극하는 매체",
     color: "#FFF5F2",
@@ -33,6 +36,7 @@ const items = [
   },
   {
     icon: "💌",
+    image: null,
     title: "메시지 카드",
     subtitle: "패키지의 감정적 핵심",
     color: "#FAF7F2",
@@ -87,6 +91,28 @@ export default function PackageItemsSection() {
           </FadeUp>
         </div>
 
+        {/* Featured package photo */}
+        <FadeUp delay={0.2}>
+          <div
+            style={{
+              position: "relative",
+              width: "100%",
+              borderRadius: 24,
+              overflow: "hidden",
+              aspectRatio: "16 / 7",
+              marginBottom: 48,
+              boxShadow: "0 8px 40px rgba(31,27,24,0.12)",
+            }}
+          >
+            <Image
+              src="/images/package-full.png"
+              alt="Gifit 패키지 전체"
+              fill
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+        </FadeUp>
+
         {/* Items */}
         <div className="grid md:grid-cols-3 gap-6">
           {items.map((item, i) => (
@@ -109,22 +135,32 @@ export default function PackageItemsSection() {
                 <div
                   style={{
                     background: item.color,
-                    padding: "32px 28px 24px",
+                    padding: item.image ? 0 : "32px 28px 24px",
                     textAlign: "center",
+                    position: "relative",
                   }}
                 >
-                  <div style={{ fontSize: 44, marginBottom: 12 }}>{item.icon}</div>
-                  <h3
-                    style={{
-                      fontSize: 20,
-                      fontWeight: 700,
-                      color: "#1F1B18",
-                      marginBottom: 4,
-                    }}
-                  >
-                    {item.title}
-                  </h3>
-                  <p style={{ fontSize: 13, color: "#7A7069" }}>{item.subtitle}</p>
+                  {item.image ? (
+                    <>
+                      <div style={{ position: "relative", width: "100%", aspectRatio: "4/3", overflow: "hidden" }}>
+                        <Image src={item.image} alt={item.title} fill style={{ objectFit: "cover" }} />
+                      </div>
+                      <div style={{ padding: "20px 28px 18px" }}>
+                        <h3 style={{ fontSize: 20, fontWeight: 700, color: "#1F1B18", marginBottom: 4 }}>
+                          {item.title}
+                        </h3>
+                        <p style={{ fontSize: 13, color: "#7A7069" }}>{item.subtitle}</p>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <div style={{ fontSize: 44, marginBottom: 12 }}>{item.icon}</div>
+                      <h3 style={{ fontSize: 20, fontWeight: 700, color: "#1F1B18", marginBottom: 4 }}>
+                        {item.title}
+                      </h3>
+                      <p style={{ fontSize: 13, color: "#7A7069" }}>{item.subtitle}</p>
+                    </>
+                  )}
                 </div>
 
                 {/* Features */}
