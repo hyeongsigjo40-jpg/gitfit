@@ -346,54 +346,21 @@ export default function CurationResultView() {
         <motion.div {...fadeUp(0.3)} style={{ marginBottom: 32 }}>
           <div
             style={{
-              background: "linear-gradient(140deg, #FAF7F2 0%, #F0D8D1 100%)",
-              border: "1.5px solid #E8DDD6",
               borderRadius: 20,
-              padding: "28px 26px",
-              boxShadow: "0 4px 20px rgba(197,138,122,0.12)",
+              overflow: "hidden",
+              boxShadow: "0 4px 24px rgba(31,27,24,0.12)",
             }}
           >
-            <div className="flex items-center gap-2 mb-5">
-              <span style={{ fontSize: 20 }}>💌</span>
-              <p
-                style={{
-                  fontSize: 11,
-                  fontWeight: 700,
-                  color: "#C58A7A",
-                  letterSpacing: "0.08em",
-                  textTransform: "uppercase",
-                }}
-              >
-                메시지 카드
-              </p>
-            </div>
-
-            <p
-              style={{
-                fontSize: 15,
-                lineHeight: 2.1,
-                color: "#1F1B18",
-                fontWeight: 500,
-                whiteSpace: "pre-line",
-              }}
-            >
-              {result.messageCard}
-            </p>
-
-            <div
-              style={{
-                marginTop: 20,
-                paddingTop: 16,
-                borderTop: "1px solid rgba(197,138,122,0.25)",
-              }}
-            >
-              <p style={{ fontSize: 12, color: "#9C9189", lineHeight: 1.6 }}>
-                이 카드에는 상품 설명이 없습니다.
-                <br />
-                왜 이 향과 꽃을 골랐는지, 그 이유만 담겨 있어요.
-              </p>
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={`/api/card?text=${encodeURIComponent(result.messageCard)}`}
+              alt="메시지 카드"
+              style={{ width: "100%", display: "block" }}
+            />
           </div>
+          <p style={{ fontSize: 12, color: "#9C9189", lineHeight: 1.6, marginTop: 12, textAlign: "center" }}>
+            왜 이 향과 꽃을 골랐는지, 그 이유만 담겨 있어요.
+          </p>
         </motion.div>
 
         {/* CTA */}

@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
+import { Gowun_Batang } from "next/font/google";
 import "./globals.css";
+
+const gowunBatang = Gowun_Batang({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-gowun",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Gifit — 보내는 사람의 마음을 담은 선물",
@@ -13,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className="h-full antialiased">
+    <html lang="ko" className={`h-full antialiased ${gowunBatang.variable}`}>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

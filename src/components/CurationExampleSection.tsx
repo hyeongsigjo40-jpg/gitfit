@@ -200,36 +200,17 @@ export default function CurationExampleSection() {
                 whileHover={{ y: -3 }}
                 transition={{ duration: 0.2 }}
                 style={{
-                  background: "linear-gradient(135deg, #FAF7F2 0%, #F0D8D1 100%)",
-                  border: "1.5px solid #E8DDD6",
                   borderRadius: 20,
-                  padding: "24px",
-                  boxShadow: "0 4px 24px rgba(31,27,24,0.10)",
+                  overflow: "hidden",
+                  boxShadow: "0 4px 24px rgba(31,27,24,0.15)",
                 }}
               >
-                <div className="flex items-center gap-2 mb-4">
-                  <span style={{ fontSize: 18 }}>💌</span>
-                  <p style={{ fontSize: 12, color: "#9C9189", fontWeight: 600 }}>메시지 카드</p>
-                </div>
-                <p
-                  style={{
-                    fontSize: 14,
-                    lineHeight: 1.85,
-                    color: "#1F1B18",
-                    fontWeight: 500,
-                  }}
-                >
-                  "요즘 네 하루가 많이 무거워 보였어.
-                  <br />
-                  이 향은 네가 잠깐이라도 숨을 고를 수 있었으면 해서,
-                  <br />
-                  이 꽃은 네 시간이 조금 더 평온해졌으면 해서 골랐어.
-                  <br />
-                  <br />
-                  지금은 괜찮지 않아도 돼.
-                  <br />
-                  오늘은 버티기만 해도 충분해."
-                </p>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={`/api/card?text=${encodeURIComponent("요즘 네 하루가 많이 무거워 보였어.\n이 향은 네가 잠깐이라도 숨을 고를 수 있었으면 해서,\n이 꽃은 네 시간이 조금 더 평온해졌으면 해서 골랐어.\n\n지금은 괜찮지 않아도 돼.\n오늘은 버티기만 해도 충분해.")}`}
+                  alt="메시지 카드 예시"
+                  style={{ width: "100%", display: "block" }}
+                />
               </motion.div>
             </FadeUp>
           </div>

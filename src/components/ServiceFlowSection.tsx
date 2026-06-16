@@ -145,10 +145,11 @@ export default function ServiceFlowSection() {
                 >
                   <p
                     style={{
-                      fontSize: 12,
+                      fontSize: 13,
                       color: "#9C9189",
-                      fontStyle: "italic",
-                      lineHeight: 1.6,
+                      fontFamily: step.number === "02" || step.number === "03" ? "var(--font-gowun)" : undefined,
+                      fontStyle: step.number === "02" ? "italic" : undefined,
+                      lineHeight: 1.7,
                     }}
                   >
                     {step.detail}

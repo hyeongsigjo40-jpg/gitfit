@@ -129,25 +129,18 @@ export default function ReceiverExperienceSection() {
               {/* Reaction */}
               <div
                 style={{
-                  background: "linear-gradient(135deg, #F0D8D1 0%, #FAF7F2 100%)",
                   borderRadius: 16,
-                  padding: "20px 22px",
+                  overflow: "hidden",
                   marginBottom: 20,
+                  boxShadow: "0 4px 20px rgba(31,27,24,0.10)",
                 }}
               >
-                <p
-                  style={{
-                    fontSize: 15,
-                    fontWeight: 700,
-                    color: "#1F1B18",
-                    lineHeight: 1.6,
-                    fontStyle: "italic",
-                  }}
-                >
-                  "이 사람이 나를
-                  <br />
-                  이렇게 생각했구나."
-                </p>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={`/api/card?text=${encodeURIComponent("이 사람이 나를\n이렇게 생각했구나.")}`}
+                  alt="메시지 카드"
+                  style={{ width: "100%", display: "block" }}
+                />
               </div>
 
               <div
