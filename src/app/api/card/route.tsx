@@ -25,14 +25,14 @@ export async function GET(request: NextRequest) {
           alt=""
           style={{ position: "absolute", top: 0, left: 0, width: 1254, height: 1254 }}
         />
-        {/* Text safe zone: inside white card (starts ~100px from edges), above flower (~y:850) */}
+        {/* Text safe zone: inset from the visible white paper, above the flower. */}
         <div
           style={{
             position: "absolute",
-            top: 160,
-            left: 160,
-            width: 920,
-            height: 680,
+            top: 238,
+            left: 238,
+            width: 840,
+            height: 700,
             fontFamily: "Gowun Batang",
             fontSize: 42,
             lineHeight: 1.75,
