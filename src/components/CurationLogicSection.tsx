@@ -281,30 +281,17 @@ export default function CurationLogicSection() {
             <FadeUp delay={0.34}>
               <div
                 style={{
-                  background: "linear-gradient(135deg, #FAF7F2 0%, #F0D8D1 100%)",
-                  border: "1.5px solid #E8DDD6",
                   borderRadius: 16,
-                  padding: "22px 22px",
-                  boxShadow: "0 2px 12px rgba(197,138,122,0.10)",
+                  overflow: "hidden",
+                  boxShadow: "0 4px 24px rgba(31,27,24,0.12)",
                 }}
               >
-                <div className="flex items-center gap-2 mb-4">
-                  <span style={{ fontSize: 16 }}>💌</span>
-                  <p style={{ fontSize: 11, color: "#9C9189", fontWeight: 600, letterSpacing: "0.06em" }}>
-                    메시지 카드
-                  </p>
-                </div>
-                <p
-                  style={{
-                    fontSize: 14,
-                    lineHeight: 2,
-                    color: "#1F1B18",
-                    fontWeight: 500,
-                    whiteSpace: "pre-line",
-                  }}
-                >
-                  {RESULT.messageCard}
-                </p>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={`/api/card?text=${encodeURIComponent(RESULT.messageCard)}`}
+                  alt="메시지 카드"
+                  style={{ width: "100%", display: "block" }}
+                />
               </div>
             </FadeUp>
           </div>

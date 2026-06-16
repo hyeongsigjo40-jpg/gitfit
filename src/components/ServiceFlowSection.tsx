@@ -37,6 +37,14 @@ const steps = [
   },
 ];
 
+const messageCardPreview = [
+  "너와 함께 있으면 꾸미지 않아도 편안해서,",
+  "그 분위기를 닮은 깨끗한 코튼향을 골랐어.",
+  "",
+  "우리의 우정과 네가 보여준 배려를 담아",
+  "프리지아도 함께 보낼게.",
+].join("\n");
+
 export default function ServiceFlowSection() {
   return (
     <section id="flow" style={{ background: "#FDFAF7" }} className="py-28 md:py-36">
@@ -136,25 +144,42 @@ export default function ServiceFlowSection() {
                   {step.description}
                 </p>
 
-                <div
-                  style={{
-                    background: "#FAF7F2",
-                    borderRadius: 10,
-                    padding: "10px 12px",
-                  }}
-                >
-                  <p
+                {step.number === "03" ? (
+                  <div
                     style={{
-                      fontSize: 13,
-                      color: "#9C9189",
-                      fontFamily: step.number === "02" || step.number === "03" ? "var(--font-gowun)" : undefined,
-                      fontStyle: step.number === "02" ? "italic" : undefined,
-                      lineHeight: 1.7,
+                      borderRadius: 12,
+                      overflow: "hidden",
+                      boxShadow: "0 2px 12px rgba(31,27,24,0.1)",
                     }}
                   >
-                    {step.detail}
-                  </p>
-                </div>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={`/api/card?text=${encodeURIComponent(messageCardPreview)}`}
+                      alt="메시지 카드 미리보기"
+                      style={{ width: "100%", display: "block" }}
+                    />
+                  </div>
+                ) : (
+                  <div
+                    style={{
+                      background: "#FAF7F2",
+                      borderRadius: 10,
+                      padding: "10px 12px",
+                    }}
+                  >
+                    <p
+                      style={{
+                        fontSize: 13,
+                        color: "#9C9189",
+                        fontFamily: step.number === "02" ? "var(--font-gowun)" : undefined,
+                        fontStyle: step.number === "02" ? "italic" : undefined,
+                        lineHeight: 1.7,
+                      }}
+                    >
+                      {step.detail}
+                    </p>
+                  </div>
+                )}
               </motion.div>
             </FadeUp>
           ))}

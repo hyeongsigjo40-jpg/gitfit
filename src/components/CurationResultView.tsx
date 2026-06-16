@@ -175,6 +175,47 @@ export default function CurationResultView() {
             ))}
         </motion.div>
 
+        {/* Curated package preview */}
+        <motion.div {...fadeUp(0.14)} style={{ marginBottom: 24 }}>
+          <div
+            style={{
+              background: "#FFFFFF",
+              border: "1px solid #E8DDD6",
+              borderRadius: 20,
+              overflow: "hidden",
+              boxShadow: "0 4px 24px rgba(31,27,24,0.1)",
+            }}
+          >
+            <div style={{ position: "relative", width: "100%", aspectRatio: "1 / 1" }}>
+              <Image
+                src="/images/package-full.png"
+                alt="큐레이션 패키지"
+                fill
+                sizes="(max-width: 680px) 100vw, 632px"
+                style={{ objectFit: "cover" }}
+                priority
+              />
+            </div>
+            <div style={{ padding: "18px 22px 20px" }}>
+              <p
+                style={{
+                  fontSize: 12,
+                  fontWeight: 600,
+                  color: "#C58A7A",
+                  letterSpacing: "0.06em",
+                  textTransform: "uppercase",
+                  marginBottom: 8,
+                }}
+              >
+                큐레이션 패키지
+              </p>
+              <p style={{ fontSize: 14, color: "#7A7069", lineHeight: 1.7 }}>
+                향, 프리저브드 플라워, 메시지 카드가 한 패키지로 구성돼요.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
         {/* Scent */}
         <motion.div {...fadeUp(0.15)} style={{ marginBottom: 16 }}>
           <div
